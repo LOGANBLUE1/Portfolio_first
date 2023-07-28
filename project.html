@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya - portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(15, 15, 66);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        background-color: rgb(20, 20, 85);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+        color: white;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        text-decoration: none;
+        color: pink;
+        font-size: 1.04rem;
+      }
+      main hr {
+        background-color: #8c76ce;
+        border: 0;
+        height: 1px;
+        margin: 40px 80px;
+      }
+      .left {
+        font-size: 2rem;
+      }
+      .firstSec {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 60px 0;
+      }
+      .leftSec {
+        width: 30%;
+        font-size: 3rem;
+      }
+      .leftSec .btn{
+        padding: 12px;
+        background-color: rgb(44, 23, 65);
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .leftSec .buttons{
+        padding: 50px 0;
+      }
+      .rightSec {
+        width: 30%;
+      }
+      .rightSec img {
+        width: 80%;
+        margin: 50px 50px;
+      }
+      .text-name {
+        color: blueviolet;
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: blueviolet;
+      }
+      .secondSec {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSec h1 {
+        font-size: 1.9rem;
+      }
+      .secondSec .box {
+        background-color: white;
+        width: 80vw;
+        height: 2px;
+        margin: 60px 0;
+        display: flex;
+      }
+      .secondSec .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+      .image-top {
+        width: 50px;
+        position: relative;
+        top: -25px;
+        left: -5px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 78px;
+      }
+      .vertical-descrip {
+        position: relative;
+        top: 80px;
+        color: gray;
+        font-size: 10px;
+        width: 180px;
+      }
+      footer{
+        
+        height: 150px;
+      }
+      .footer{
+        display: flex;
+        margin: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer > div{
+        width: 123px;
+      }
+      footer .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 12px;
+      }
+      @media screen and (max-width:1000px){
+        body{
+        }
+        .firstSec{
+          flex-direction: column-reverse;
+        }
+        .box{
+          flex-direction: column;
+        }
+        .secondSec .vertical{
+          height: unset;
+        }
+        .vertical-title, .vertical-descrip{
+          left: 45px;
+          top: 45px;
+        }
+        .secondSec .box{
+          width: 70vw;
+        }
+        nav{
+          flex-direction: column;
+        }
+        .firstSec .rightSec {
+          padding-left: 5vw;
+          width: 75%;
+        }
+        .firstSec .leftSec {
+          width: 75%;
+          padding-left: 5vw;
+        }
+        .image-top{
+          top: 90px;  
+        }
+        .secondSec{
+          height: 130vh;
+        }
+        .footer{
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Aditya's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="firstSec">
+            <div class="leftSec">
+             <div> Hi, my name is <span class="text-name">Aditya</span></div>
+              <div>and I am a passionate</div>
+              <span id="element"></span>
+              <div class="buttons">
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit Github</button>
+              </div>
+            </div>
+            <div class="rightSec"><img src="/pngwing.com.png" alt="" /></div>
+          </section>
+          <hr />
+          <section class="secondSec">
+            <span class="text-gray">What have I done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+              <div class="vertical">
+                <img
+                  class="image-top"
+                  src="/NicePng_html5-logo-png_3529769.png"
+                  alt=""
+                />
+                <div class="vertical-title">HTML Developer (2010-2012)</div>
+                <div class="vertical-descrip">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In corrupti
+                  ipsa facere reiciendis itaque excepturi similique quae unde fugiat
+                  accusamus?
+                </div>
+              </div>
+              <div class="vertical">
+                <img
+                  class="image-top"
+                  src="/NicePng_html5-logo-png_3529769.png"
+                  alt=""
+                />
+                <div class="vertical-title">HTML Developer (2010-2012)</div>
+                <div class="vertical-descrip">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In corrupti
+                  ipsa facere reiciendis itaque excepturi similique quae unde fugiat
+                  accusamus?
+                </div>
+              </div>
+              <div class="vertical">
+                <img
+                  class="image-top"
+                  src="/NicePng_html5-logo-png_3529769.png"
+                  alt=""
+                />
+                <div class="vertical-title">HTML Developer (2010-2012)</div>
+                <div class="vertical-descrip">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In corrupti
+                  ipsa facere reiciendis itaque excepturi similique quae unde fugiat
+                  accusamus?
+                </div>
+              </div>
+              <div class="vertical">
+                <img
+                  class="image-top"
+                  src="/NicePng_html5-logo-png_3529769.png"
+                  alt=""
+                />
+                <div class="vertical-title">HTML Developer (2010-2012)</div>
+                <div class="vertical-descrip">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In corrupti
+                  ipsa facere reiciendis itaque excepturi similique quae unde fugiat
+                  accusamus?
+                </div>
+              </div>
+              <div class="vertical">
+                <img
+                  class="image-top"
+                  src="/NicePng_html5-logo-png_3529769.png"
+                  alt=""
+                />
+                <div class="vertical-title">HTML Developer (2010-2012)</div>
+                <div class="vertical-descrip">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In corrupti
+                  ipsa facere reiciendis itaque excepturi similique quae unde fugiat
+                  accusamus?
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Aditya's Developer portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="footer-forth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+           Copyright &#169; www.aditysportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Problem Solver", "Web Designer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
